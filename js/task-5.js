@@ -7,16 +7,22 @@ const australia = "170";
 const india = "80";
 const jamaika = "120";
 
-if (user === "китай") {
-    alert(`Доставка в ${user} будет стоить ${china} кредитов`);
-} else if (user === "чили") {
-    alert(`Доставка в ${user} будет стоить ${chili} кредитов`);
-} else if (user === "австралия") {
-    alert(`Доставка в ${user} будет стоить ${australia} кредитов`);
-} else if (user === "индия") {
-    alert(`Доставка в ${user} будет стоить ${india} кредитов`);
-} else if (user === "ямайка") {
-    alert(`Доставка в ${user} будет стоить ${jamaika} кредитов`);
-} else {
-    alert("В вашей стране доставка не доступна");
+switch (user) {
+    case "китай":
+        alert(`Доставка в ${user} будет стоить ${china} кредитов`);
+        break;
+    case "чили":
+        alert(`Доставка в ${user} будет стоить ${chili} кредитов`);
+        break;
+    case "австралия":
+        alert(`Доставка в ${user} будет стоить ${australia} кредитов`);
+        break;
+    case "индия":
+        alert(`Доставка в ${user} будет стоить ${india} кредитов`);
+        break;
+    case "ямайка":
+        alert(`Доставка в ${user} будет стоить ${jamaika} кредитов`);
+        break;
+    default:
+        alert("В вашей стране доставка не доступна");
 }
